@@ -1,0 +1,377 @@
+/*navbar*/
+ .navbar-style {
+     margin-left: 50px !important;
+     padding-right: 110px !important;
+     position: absolute;
+     top: 30px;
+     z-index: 999;
+     background: none !important;
+}
+
+ .dropdown-menu {
+     background-color: #72b972!important;
+     opacity: 0.5;
+     color: #fff !important;
+     text-decoration-color: white;
+}
+
+ li {
+     margin-left: 20px;
+}
+
+ .carousel-style{
+     position: absolute;
+     top: 0;
+}
+
+/*si applica alle scritte con un verde chiaro*/
+ .colore{
+     color: #72b972;
+}
+
+/*utilizzato nei sfondi da usurare*/
+.colore2{
+    background-color: #ebebeb;
+}
+
+ .text-sm-center h5{
+     margin-block-end: 0px !important;
+}
+
+/*per lo sfondo del dropdown*/
+ li {
+     color: black !important;
+}
+
+ .label col-md {
+     padding-left: 30px;
+     padding-right: 30px;
+}
+
+/*freccia giù*/
+ #freccia-down {
+     width: 50px;
+     cursor: pointer;
+     vertical-align: middle;
+     border-style: none;
+    transform: scale(1.1,1.1);
+     transition: all 1.0s;
+}
+
+ .forward {
+     display: block;
+     text-align: center;
+     font-size: 3rem;
+     transition: .2s ease-in-out;
+}
+
+/*metodi per capovolgimento box griglia*/
+ .front {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+ .flip-box {
+     background-color: transparent;
+     width: 300px;
+     height: 200px;
+     perspective: 1000px;
+}
+
+ @media (max-width: 639px){
+     .flip-box{
+         width: 270px;
+    }
+}
+
+ .flip-box h2{
+     color: green;
+}
+
+ .flip-box-inner {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     transition: transform 0.8s;
+     transform-style: preserve-3d;
+}
+
+ .flip-box:hover .flip-box-inner {
+     transform: rotateY(180deg);
+}
+
+ .flip-box-front, .flip-box-back {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     backface-visibility: hidden;
+}
+
+ .flip-box-front {
+     background-color: white;
+     color: black;
+     margin-top: 15px;
+}
+
+ .flip-box-back {
+     padding-left: 5px;
+     text-align: left;
+     background-color: #D2D2D2;
+     color: black;
+     transform: rotateY(180deg);
+}
+
+/*immagini container fluid*/
+ .sfondo1 {
+     background: url(immagini/breadbord-lucchetto-tagliato.jpg);
+     color: white;
+}
+
+.sfondo2 {
+     background: url(immagini/server2-tagliato.jpg);
+     color: white;
+     display: flex;
+}
+
+ .sfondo3 {
+     background: url(immagini/programmazione-viola.jpg);
+     color: white;
+}
+
+ @media(max-width: 1279px){
+     .sfondo-img {
+         height: 355px;
+    }
+}
+ @media (max-width: 1439px){
+     .sfondo-img {
+         height: 444px;
+    }
+}
+ @media (max-width: 1679px){
+     .sfondo-img {
+         background-size: 130%;
+    }
+}
+ @media (max-width: 1919px){
+     .sfondo-img {
+         background-size: 110%;
+    }
+}
+
+ .sfondo-img {
+     background-size: 100%;
+     height: 490px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 0px;
+     background-repeat: no-repeat;
+     width: 100%;
+}
+
+/*SRITTA HOME*/
+ .scritta1 {
+     color: green;
+     padding: 50px;
+     padding-bottom: 10px;
+     text-align: center;
+}
+
+/*lista partner*/
+ .partner {
+     margin-top: 60px;
+     margin-bottom: 80px;
+}
+
+ @media (max-width: 799px){
+     .partner {
+         margin-top: 40px;
+    }
+}
+
+.partner2{
+    align-content: center;
+}
+
+ .swiper-container {
+     margin-left: auto;
+     margin-right: auto;
+     position: relative;
+     overflow: hidden;
+     list-style: none;
+     padding: 0;
+     z-index: 1;
+}
+
+.contatti{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+/*impostazioni news*/
+ .articoli-home {
+     background-image: url(immagini/server5.jpg);
+     background-size: 100%;
+     padding-top: 145px;
+     background-repeat: no-repeat;
+     z-index: 100 !important;
+}
+
+ @media (max-width: 1919px){
+     .articoli-home {
+         height: 360px;
+         padding-top: 110px;
+    }
+}
+ @media (max-width: 1679px){
+     .articoli-home {
+         height: 323px;
+         padding-top: 73px;
+    }
+}
+ @media (max-width: 1439px){
+     .articoli-home {
+         height: 325px;
+         padding-top: 75px;
+    }
+}
+ @media (max-width: 1200px){
+     .articoli-home {
+         height: 275px;
+            padding-top: 70px;
+         background-size: 127%;
+         background-position: center;
+    }
+}
+ @media (max-width: 992px){
+     .articoli-home {
+         height: 220px;
+         padding-top: 70px;
+         background-size: 127%;
+    }
+}
+ @media (max-width: 767px){
+     .articoli-home {
+         height: 145px;
+         padding-top: 40px;
+         background-size: 127%;
+    }
+}
+
+ @media (max-width: 692px){
+     .articoli-home {
+         background-size: 300%;
+         height: 145px;
+    }
+}
+ @media (max-width: 576px){
+     .articoli-home {
+         background-size: 915%;
+         height: 1350px;
+    }
+}
+
+ .brighten img {
+       -webkit-filter: brightness(50%);
+       -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+       -ms-transition: all 1s ease;
+       transition: all 1s ease;
+ }
+ .brighten img:hover {
+       -webkit-filter: brightness(100%);
+ } 
+
+/*contatti home*/
+ .contatti-home {
+     height: 650px;
+     background-image: url(immagini/logo-sfondo.jpg);
+     background-color: #ebebeb;
+     background-size: 100%;
+     background-repeat: no-repeat;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     z-index: -1;
+}
+ 
+
+ .testo-contatti-home {
+     padding-top: 250px;
+     font-size: 30px;
+     color: #302c2d;
+     text-align: center;
+}
+
+ .button-contattaci {
+     text-transform: uppercase;
+     color: green;
+     font-weight: bold;
+     letter-spacing: 3px;
+     cursor: pointer;
+     padding: 5px 55px;
+     text-decoration: none;
+     border-radius: unset;
+     border-width: 1px;
+     border-style: solid;
+     border-color: green;
+     border-image: initial;
+     z-index: 999;
+}
+
+.card-deck{
+    z-index: -1;
+}
+
+ .parlane-con-noi {
+     color: green;
+     font-weight: bold;
+     margin-top: 0px !important;
+}
+
+/*footer*/
+ .box-footer {
+     text-align: left;
+     color: #FFF;
+     background-color: #000;
+     font-size: 16px;
+     bottom: 0;
+     z-index: 50;
+     padding: 30px 0px;
+}
+
+ .text-center {
+     text-align: center!important;
+}
+
+ #logo-footer {
+     width: 75%;
+     float: left;
+}
+
+ .box-footer img {
+     width: 20px;
+     float: left;
+     position: relative;
+     margin-right: 15px;
+}
+
+img {
+     vertical-align: middle;
+     border-style: none;
+}
+
+.footer-social p {
+     color: white;
+     margin-top: 2px;
+     float: left;
+     position: relative;
+     text-transform: uppercase;
+     font-size: 13px;
+     letter-spacing: 3px;
+}
+
